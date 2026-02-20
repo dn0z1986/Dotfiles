@@ -1,0 +1,157 @@
+pages:
+  - name: dn0z
+    # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+    # hide-desktop-navigation: true
+    columns:
+      - size: small
+        widgets:
+          - type: calendar
+            first-day-of-week: monday
+#          - type: videos
+#            channels:
+#              - UC7uWVLTCsAZGe7ME3-ds6ww # jonathan castro
+          - type: dns-stats
+            service: adguard
+            url: http://10.0.1.31
+            username: dn0z
+            password: Dn0z1986*.
+      - size: full
+        widgets:
+          - type: search
+            search-engine: google
+
+          - type: monitor
+            cache: 5s
+            title: Servidores
+            show-failing-only: false
+            sites:
+              - title: Proxmox
+                url: https://proxmox1.dn0z.com
+                icon: di:proxmox
+              - title: Adguard-home
+                url: https://adguard.dn0z.com
+                icon: di:adguard-home-sync
+              - title: Adguard-home-respaldo
+                url: https://adguard2.dn0z.com
+                icon: di:adguard-home-sync
+              - title: Arcane Orangepi
+                url: https://arcane2.dn0z.com
+                icon: di:arcane
+              - title: Arcane oracle
+                url: https://arcane.dn0z.com
+                icon: di:arcane
+              - title: Arcane Vm proxmox
+                url: https://proxdocker.dn0z.com
+                icon: di:arcane
+              - title: Home assistant
+                url: http://10.0.1.242:8123
+                icon: di:home-assistant
+              - title: Crafty
+                url: https://crafty.dn0z.com
+                icon: di:crafty-controller
+              - title: Truenas
+                url: https://truenas.dn0z.com
+                icon: di:truenas
+          - type: monitor
+            cache: 5s
+            title: Multimedia
+            show-failing-only: false
+            sites:
+              - title: Jellyfin
+                url: https://jellyfin.dn0z.com
+                icon: di:jellyfin
+              - title: Immich
+                url: https://immich.dn0z.com
+                icon: di:immich
+              - title: Qbittorrent
+                url: https://qbittorrent.dn0z.com
+                icon: di:qbittorrent
+
+
+          - type: monitor
+            cache: 5s
+            title: Apps
+            show-failing-only: false
+            sites:
+              - title: Vaultwarden
+                url: https://vault.dn0z.com
+                icon: di:vaultwarden
+              - title: Calibre
+                url: https://calibre.dn0z.com
+                icon: di:calibre
+              - title: Paperless
+                url: https://paper.dn0z.com
+                icon: di:paperless
+              - title: Uptime Kuma
+                url: https://kuma.dn0z.com
+                icon: di:uptime-kuma
+              - title: Opencloud
+                url: https://cloud.dn0z.com
+                icon: di:open-cloud
+              - title: MySpeed
+                url: https://myspeed.dn0z.com
+                icon: di:myspeed
+          - type: monitor
+            cache: 5s
+            title: Mis webs
+            show-failing-only: false
+            sites:
+              - title: Blog
+                url: https://wordpress.dn0z.com
+                icon: di:wordpress
+              - title: Portfolio
+                url: https://dn0z.com
+                icon: di:safari-ios
+              - title: n8n
+                url: https://n8n.dn0z.com
+                icon: di:n8n
+#          - type: group
+#            widgets:
+#              - type: reddit
+#                subreddit: homelab
+#                show-thumbnails: true
+#              - type: reddit
+#                subreddit: linux
+#                show-thumbnails: true
+#              - type: reddit
+#                subreddit: unixporn
+#                show-thumbnails: true
+
+      - size: small
+        widgets:
+          - type: weather
+            location: Huelva, Spain
+            units: metric # alternatively "imperial"
+            hour-format: 12h # alternatively "24h"
+            # Optionally hide the location from being displayed in the widget
+            # hide-location: true
+
+          - type: bookmarks
+            groups:
+              - links:
+                  - title: Gmail
+                    url: https://mail.google.com/mail/u/0/
+                  - title: Amazon
+                    url: https://www.amazon.com/
+                  - title: Github
+                    url: https://github.com/
+                  - title: Linuxserve
+                    url: https://docs.linuxserver.io/
+                  - title: Helper Scripts
+                    url: https://community-scripts.github.io/ProxmoxVE/
+              - title: Entertainment
+                color: 10 70 50
+                links:
+                  - title: Netflix
+                    url: https://www.netflix.com/
+                  - title: Crunchyroll
+                    url: https://www.crunchyroll.com/
+                  - title: YouTube
+                    url: https://www.youtube.com/
+              - title: Social
+                color: 200 50 50
+                links:
+                  - title: Reddit
+                    url: https://www.reddit.com/
+                  - title: Instagram
+                    url: https://www.instagram.com/
